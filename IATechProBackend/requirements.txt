@@ -1,4 +1,4 @@
-sgiref
+asgiref
 attrs
 Django
 django-cors-headers
