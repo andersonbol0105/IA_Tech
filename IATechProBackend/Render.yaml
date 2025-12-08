@@ -2,7 +2,7 @@ services:
   - type: web
     name: django-api
     env: python
-    buildIdComand: "pip install -r requirements.txt && python manage.py migrate"
+    buildIdComand: "pip install -r requirements.txt && python manage.py collecstatic --noinput && python manage.py migrate"
     startComand: "ginicorn IATechProBackend.wsgi"
     envVars:
       - key: SECRET_KEY
